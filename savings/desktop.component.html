@@ -1,0 +1,24 @@
+<div class="heading">Savings Accounts</div>
+
+
+<div class="row topMargin">
+    <div class="col-md-12">
+        <div >
+            <table class="table table-bordered table-condensed table-striped">
+                <tr>
+                    <th>Product</th>
+                    <th>Interest Rate</th>
+                    <th>Minimum deposit</th>
+                    <th>Interest Type</th>
+                </tr>
+
+                <tr ng-repeat="account in model.accounts">
+                    <td>{{account.product}}</td>
+                    <td>{{account.interestRate}}</td>
+                    <td>{{account.minimum | currency:'£'}}</td>
+                    <td>{{account.interestType}}</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>

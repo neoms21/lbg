@@ -1,0 +1,23 @@
+
+body {
+    font-family: Helvetica;
+    font-weight: normal;
+    font-size: 24px;
+    color: #0c332f;
+    background-color: #f9fbd0;
+}
+
+.heading {
+    font-family: Helvetica;
+    font-weight: bold;
+    line-height: 36px;
+    background-color: #008c85;
+    color: #e4efee;
+}
+
+a {
+    font-family: Helvetica;
+    line-height: 36px;
+    font-size: 20px;
+    color: #8c6300;
+}

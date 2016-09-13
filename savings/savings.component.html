@@ -1,0 +1,9 @@
+<div class="container-fluid">
+
+    <div ng-if="model.isMobile">
+        <mobile-savings></mobile-savings>
+    </div>
+    <div ng-if="!model.isMobile">
+        <desktop-savings></desktop-savings>
+    </div>
+</div>

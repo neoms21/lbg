@@ -1,0 +1,32 @@
+<div class="heading">Savings Accounts</div>
+
+<div class="row topMargin">
+    <div class="col-md-12">
+        <div>
+            <table class="table table-bordered table-condensed table-striped">
+                <tr>
+                    <td>Product: {{model.currentProduct.product}}</td>
+                </tr>
+                <tr>
+                    <td>Rate: {{model.currentProduct.interestRate}}</td>
+                </tr>
+                <tr>
+                    <td>Minimum Deposit: {{model.currentProduct.minimum | currency:'£'}}</td>
+                </tr>
+                <tr>
+                    <td>Interest Type: {{model.currentProduct.interestType}}</td>
+                </tr>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm-2">
+        <a href="" ng-click="model.showProduct(model.previousProduct)">{{model.previousProduct.product}}</a>
+    </div>
+    <div class="col-sm-offset-8 col-sm-2">
+        <a href="" ng-click="model.showProduct(model.nextProduct)">{{model.nextProduct.product}}</a>
+    </div>
+</div>
